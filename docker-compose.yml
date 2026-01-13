@@ -1,0 +1,25 @@
+services:
+  internetbanking:
+    image: internetbanking:v1
+    build: ./internetbanking
+    ports:
+      - "81:80"
+
+  mobilebanking:
+    image: mobilebanking:v1
+    build: ./mobilebanking
+    ports:
+      - "82:80"
+
+  insurance:
+    image: insurance:v1
+    build: ./insurance
+    ports:
+      - "83:80"
+
+  loans:
+    image: loans:v1
+    build: ./loans
+    ports:
+      - "84:80"
+
